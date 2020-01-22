@@ -11,7 +11,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.0.2.RELEASE</version>
+    <version>2.2.4.RELEASE</version>
   </parent>
 
   <repositories>
@@ -29,10 +29,9 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <zero.cloud.version>0.0.1-SNAPSHOT</zero.cloud.version>
     <druid.starter.version>1.1.10</druid.starter.version>
-    <swagger.version>2.6.1</swagger.version>
+    <swagger.version>2.9.2</swagger.version>
     <commons.lang3.version>3.5</commons.lang3.version>
     <annotation.detector.version>3.0.5</annotation.detector.version>
-    <!--<mybaits.starter.version>2.0.3</mybaits.starter.version>-->
     <mapper.version>3.4.0</mapper.version>
     <mybatis.version>3.4.4</mybatis.version>
     <mapper.starter.version>2.0.2</mapper.starter.version>
@@ -43,6 +42,7 @@
   <modules>
     <module>zero-cloud-account</module>
     <module>zero-cloud-member</module>
+    <module>zero-cloud-member-api</module>
     <module>zero-cloud-common</module>
     <module>zero-cloud-config</module>
     <module>zero-cloud-gateway</module>
@@ -57,7 +57,7 @@
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
-        <version>Finchley.RELEASE</version>
+        <version>Hoxton.SR1</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -66,11 +66,6 @@
         <artifactId>druid-spring-boot-starter</artifactId>
         <version>${druid.starter.version}</version>
       </dependency>
-      <!--<dependency>-->
-        <!--<groupId>org.mybatis.spring.boot</groupId>-->
-        <!--<artifactId>mybatis-spring-boot-starter</artifactId>-->
-        <!--<version>${mybaits.starter.version}</version>-->
-      <!--</dependency>-->
 
       <dependency>
         <groupId>tk.mybatis</groupId>
