@@ -1,6 +1,5 @@
 package com.xhyan.zero.cloud.account.controller;
 
-import com.xhyan.zero.cloud.account.components.client.WalletClient;
 import com.xhyan.zero.cloud.account.dto.AccountDTO;
 import com.xhyan.zero.cloud.account.dto.TaskDTO;
 import com.xhyan.zero.cloud.account.dto.req.AccountQueryReq;
@@ -29,8 +28,6 @@ public class AccountController {
     private AccountService accountService;
     @Autowired
     private SmsService smsService;
-    @Autowired
-    private WalletClient walletClient;
 
     @GetMapping(value = "/verification/code/{type}/{mobile}")
     @ApiOperation(notes = "sign up account", httpMethod = "GET", value = "发送短息验证码")
@@ -88,7 +85,6 @@ public class AccountController {
         List<TaskDTO> tasks = accountService.queryAccountTasks(accountId);
         if (account.getMining() == 1) {
             //查询账户钱包余额
-            account.setBalance(walletClient.queryBalance(accountId));
         }
         return AccountAllInfo.builder().account(account).taskList(tasks).build();
     }

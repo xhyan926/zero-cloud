@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.xhyan.zero</groupId>
   <artifactId>zero-cloud-gateway</artifactId>
-  <version>${zero.cloud.version}</version>
+  <version>0.0.1-SNAPSHOT</version>
   <name>zero-cloud-gateway</name>
 
   <parent>

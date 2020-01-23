@@ -1,5 +1,6 @@
 package com.xhyan.zero.cloud.member;
 
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -19,7 +20,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 public class MemberApplication {
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(MemberApplication.class).web(true).run(args);
+        new SpringApplicationBuilder(MemberApplication.class).web(WebApplicationType.SERVLET).run(args);
     }
 
 }

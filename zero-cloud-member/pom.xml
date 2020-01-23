@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <artifactId>zero-cloud-member</artifactId>
-  <version>${zero.cloud.version}</version>
+  <version>0.0.1-SNAPSHOT</version>
   <name>zero-cloud-member</name>
 
   <parent>
@@ -85,7 +85,7 @@
     <dependency>
       <groupId>com.xhyan.zero</groupId>
       <artifactId>zero-cloud-member-api</artifactId>
-      <version>${zero.cloud.version}</version>
+      <version>0.0.1-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.xhyan.zero</groupId>
